@@ -6,26 +6,11 @@
 
 
 {% block content %}
-<h1>Главная страница сайта и 5 записей надо заполнить карточку</h1>
+
+{% for post in posts %}
 <div class="brds">
-    <h1>1 пост</h1>
-    {% include "includes\post_card.html" %}
+        {% include "includes\post_card.html" %}
 </div>
-<div class="brds">
-    <h1>2 пост</h1>
-    {% include "includes\post_card.html" %}
-</div>
-<div class="brds">
-    <h1>3 пост</h1>
-    {% include "includes\post_card.html" %}
-</div>
-<div class="brds">
-    <h1>4 пост</h1>
-    {% include "includes\post_card.html" %}
-</div>
-<div class="brds">
-    <h1>5 пост</h1>
-    {% include "includes\post_card.html" %}
-</div>
+{% endfor %}
 
 {% endblock %}

@@ -1,1 +1,11 @@
-<h1>Тут еще ничего нет(( надо заполнить карточку, как она быдет выглядеть</h1>
+<div class="row">
+    <h3>{{ post.title }}</h3>
+    <div class="col">
+        <p>Категори:{{ post.category }}</p>
+    </div>
+    <div class="col">
+        <p>Автор: {{ post.author }}</p>
+        <p>Дата: {{ post.date}}</p>
+    </div>
+</div>
+<p>{{post.text}}</p>
