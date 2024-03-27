@@ -6,5 +6,6 @@
 
 
 {% block content %}
-<h1>А тут надо вывести сам пост с ид {{ post }}</h1>
+<h1>{{ post.title }}</h1>
+<p>{{ post.text }}</p>
 {% endblock %}

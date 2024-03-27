@@ -6,29 +6,10 @@
 
 
 {% block content %}
-<h1>Тут еще ничего нет(( <br>
-A должны быть посты с категорией  - {{ slug }}
-</h1>
-
+{% for post in post_list %}
 <div class="brds">
-    <h1>1 пост</h1>
-    {% include "includes\post_card.html" %}
+        {% include "includes\post_card.html" %}
 </div>
-<div class="brds">
-    <h1>2 пост</h1>
-    {% include "includes\post_card.html" %}
-</div>
-<div class="brds">
-    <h1>3 пост</h1>
-    {% include "includes\post_card.html" %}
-</div>
-<div class="brds">
-    <h1>4 пост</h1>
-    {% include "includes\post_card.html" %}
-</div>
-<div class="brds">
-    <h1>5 пост</h1>
-    {% include "includes\post_card.html" %}
-</div>
+{% endfor %}
 {% endblock %}
 
