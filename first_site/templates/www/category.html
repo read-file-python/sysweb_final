@@ -6,10 +6,30 @@
 
 
 {% block content %}
-{% for post in post_list %}
+<h1> Новости<br>
+Вы в категории - {{ slug }}
+</h1>
+
+
 <div class="brds">
-        {% include "includes\post_card.html" %}
+    <h1>1 пост</h1>
+    {% include "includes\post_card.html" %}
 </div>
-{% endfor %}
+<div class="brds">
+    <h1>2 пост</h1>
+    {% include "includes\post_card.html" %}
+</div>
+<div class="brds">
+    <h1>3 пост</h1>
+    {% include "includes\post_card.html" %}
+</div>
+<div class="brds">
+    <h1>4 пост</h1>
+    {% include "includes\post_card.html" %}
+</div>
+<div class="brds">
+    <h1>5 пост</h1>
+    {% include "includes\post_card.html" %}
+</div>
 {% endblock %}
 

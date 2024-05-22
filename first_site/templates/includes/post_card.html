@@ -1,11 +1,12 @@
-<div class="row">
-    <h3>{{ post.title }}</h3>
+<div class="brds">
+    <h3>{{ post.category }}</h3>
     <div class="col">
-        <p>Категори:{{ post.category }}</p>
+        <p>Категории: {{ post.category }}</p>
     </div>
     <div class="col">
         <p>Автор: {{ post.author }}</p>
-        <p>Дата: {{ post.pub_date}}</p>
+        <p>Дата: {{ post.pub_date }}</p>
     </div>
 </div>
-<p>{{post.text}}</p>
+<p>{{post.text|truncatewords:10 }}</p>
+<a href= "{% url 'post_detail' post.id %}"> Читать далее...</a>
